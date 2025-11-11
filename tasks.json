@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "description": "Comprar leche",
+    "status": "done",
+    "createdAt": "2025-11-11T10:23:41.123456",
+    "updatedAt": "2025-11-11T10:30:10.789012"
+  }
+]
