@@ -24,20 +24,20 @@ Un sencillo **administrador de tareas desde la línea de comandos (CLI)** escrit
 
 ## ⚙️ Instalación
 
-1. Clona este repositorio o copia el archivo `task_tracker.py`:
+1. Clona este repositorio o copia el archivo `task_cli.py`:
    ```bash
-   git clone https://github.com/tuusuario/task-tracker-cli.git
-   cd task-tracker-cli
+   git clone https://github.com/MikeRider27/task_tracker.git
+   cd task_tracker
    ```
 
 2. Asegúrate de que el archivo tenga permisos de ejecución:
    ```bash
-   chmod +x task_tracker.py
+   chmod +x task_cli.py
    ```
 
 3. (Opcional) Coloca el script en tu PATH para usarlo como comando global:
    ```bash
-   sudo cp task_tracker.py /usr/local/bin/task-cli
+   sudo cp task_cli.py /usr/local/bin/task-cli
    ```
 
    Luego podrás ejecutarlo como:
@@ -53,7 +53,7 @@ El programa utiliza **subcomandos** para las distintas operaciones.
 
 ### 🟢 Agregar una nueva tarea
 ```bash
-python task_tracker.py add "Comprar leche"
+python task_cli.py add "Comprar leche"
 ```
 📤 **Salida:**
 ```
@@ -64,7 +64,7 @@ Task added successfully (ID: 1)
 
 ### 🟡 Actualizar una tarea
 ```bash
-python task_tracker.py update 1 "Comprar leche y pan"
+python task_cli.py update 1 "Comprar leche y pan"
 ```
 📤 **Salida:**
 ```
@@ -75,7 +75,7 @@ Task 1 updated successfully
 
 ### 🔴 Eliminar una tarea
 ```bash
-python task_tracker.py delete 1
+python task_cli.py delete 1
 ```
 📤 **Salida:**
 ```
@@ -86,12 +86,12 @@ Task 1 deleted successfully
 
 ### 🔵 Marcar una tarea como “en progreso”
 ```bash
-python task_tracker.py mark-in-progress 2
+python task_cli.py mark-in-progress 2
 ```
 
 ### 🟣 Marcar una tarea como “hecha”
 ```bash
-python task_tracker.py mark-done 2
+python task_cli.py mark-done 2
 ```
 
 ---
@@ -99,22 +99,22 @@ python task_tracker.py mark-done 2
 ### 📋 Listar tareas
 #### Todas las tareas:
 ```bash
-python task_tracker.py list
+python task_cli.py list
 ```
 
 #### Solo las completadas:
 ```bash
-python task_tracker.py list done
+python task_cli.py list done
 ```
 
 #### Solo las pendientes:
 ```bash
-python task_tracker.py list todo
+python task_cli.py list todo
 ```
 
 #### Solo las en progreso:
 ```bash
-python task_tracker.py list in-progress
+python task_cli.py list in-progress
 ```
 
 📤 **Ejemplo de salida:**
@@ -129,7 +129,7 @@ ID: 2, Description: Comprar leche y pan, Status: done, Created: 2025-11-11T10:23
 ```
 task-tracker-cli/
 │
-├── task_tracker.py     # Script principal
+├── task_cli.py     # Script principal
 ├── tasks.json          # Archivo de datos (se crea automáticamente)
 └── README.md           # Documentación
 ```
